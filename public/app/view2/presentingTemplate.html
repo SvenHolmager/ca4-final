@@ -1,0 +1,51 @@
+<div>
+    <div style="font-weight: bold" class="row">
+        <a style="font-weight: bold" href={{currentWiki.url}}><h1>{{currentWiki.title}}</h1></a>
+
+
+    </div>
+    </br>
+    <div style="font-weight: bold" class="row">
+        Mini Wiki
+    </div>
+
+    <div class="row">
+        {{currentWiki.abstract}}
+    </div>
+    </br>
+    <div style="font-weight: bold" class="row">
+        Categories
+    </div>
+
+    <div class="row">
+        <ul>
+            <li ng-repeat="category in currentWiki.categories">
+                <a style="font-weight: bold" href="#/view3" ng-click="presentCategory(category)">{{category}}</a>
+            </li>
+        </ul>
+        </br>
+    </div>
+    <div style="font-weight: bold" class="row">
+        Links
+    </div>
+
+    <div class="row">
+        <ul>
+            <li ng-repeat="link in currentWiki.links">
+                <a style="font-weight: bold" href={{link}} ng-click="presentWiki(link)">{{link}}</a>
+            </li>
+        </ul>
+    </div>
+    </br>
+    <div style="font-weight: bold" class="row">
+        Headings
+    </div>
+
+    <div class="row">
+        <ul>
+            <li ng-repeat="heading in currentWiki.headings">
+                {{heading.heading}}
+            </li>
+        </ul>
+    </div>
+</div>

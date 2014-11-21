@@ -1,0 +1,55 @@
+
+style.
+  .table-hover > tbody > tr:hover > td,
+  .table-hover > tbody > tr:hover > th {
+    background-color: #d9edf7
+  }
+
+script.
+  function updateDetails(id, name, description, rating, country, city, zip, street, gps) {
+    console.log(id + name + description);
+    $("#name").html("Name: "+ name);
+    $("#description").html(description);
+    $("#rating").html("Rating: "+rating);
+    $("#country").html("Country: "+country);
+    $("#city").html("City: "+city);
+    $("#zip").html("Zip: "+zip);
+    $("#street").html("Street: "+street);
+    $("#gps").html("Gps: "+gps);
+  }
+
+p This view mimics the other "Great Locations" view, but are generated on the server (using jade) and runs completely without AngularJS.
+p Is does however require some additional javascript / JQuery(see index.html and allLocations.jade)
+p You should monitor, compare and reflect over the traffic sent between the client (browser) and the server for these to suggestions
+
+
+h2 Great Locations around the world
+link(rel='stylesheet', href='href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css')
+
+p(style="color: red") #{errors}
+div(class="row")
+  div(class="col-md-5" style="height: 500px;overflow-y: auto;")
+    table(class="table table-hover")
+      thead
+        tr
+          th Name
+          th Country
+      tbody
+      each l, location in locations
+        tr(onclick="updateDetails('#{l._id}','#{l.name}','#{l.description}','#{l.rating}','#{l.country}','#{l.city}','#{l.zip}','#{l.street}','#{l.gps}')")
+          td= l.name
+          td=l.country
+
+  div( class="col-md-7" style="padding-left: 2em; height: 500px;")
+    div(style="border: 1px solid lavender;padding: 0.5em;min-height: 400px;margin-bottom: 0.5em;")
+      h2(id="name")
+      p Description
+      p(id="description")
+      p(id="rating")
+      p(id="country")
+      p(id="city")
+      p(id="zip")
+      p(id="street")
+      p(id="gps")
+    button(class="btn btn-default" onclick="alert('Not Implemented')") Delete Location
+    button(class="btn btn-default" onclick="alert('Not Implemented')" ) Edit

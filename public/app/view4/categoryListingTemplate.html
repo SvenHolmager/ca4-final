@@ -1,0 +1,27 @@
+<div>
+    <!--<table class="table table-striped">-->
+    <!--<tbody>-->
+    <!--<tr id="parent" ng-repeat=" miniwiki in miniWikis">-->
+    <!--<td><a style="font-weight: bold" href="#/view2" ng-click="presentWiki(miniwiki)">{{miniwiki.title}}</a>-->
+    <!--</td>-->
+    <!--<td style="display:none" showonhoverparent>{{miniwiki.abstract}}</td>-->
+    <!--</tr>-->
+    <!--</tbody>-->
+    <!--</table>-->
+    <!--aaaaaaaaaaaa-->
+    <!--<td><a style="font-weight: bold" href="#/view3" ng-click="presentCategory(category)">{{category}}</a>-->
+    <!--</td>-->
+
+    <table class="table table-striped">
+        <tbody>
+        <tr id="parent" ng-repeat="category in filteredCategories | filter:search ">
+
+            <td> {{incr(category)}}<a id="{{internalAnchor}}" style="font-weight: bold" href="#/view3"
+                                      ng-click="presentCategory(category)">{{category}}</a>
+
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+</div>

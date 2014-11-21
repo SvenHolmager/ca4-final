@@ -1,0 +1,20 @@
+<div>
+    <!--<a style="font-weight: bold" href="#/view2" ng-click="presentWiki(wiki)">{{wiki.title}}</a>-->
+
+    <!--<div style="display:none" showonhoverparent>-->
+    <!--{{wiki.abstract}}-->
+    <!--</div>-->
+    <table class="table table-striped">
+        <tbody>
+        <tr id="parent" ng-repeat=" miniwiki in miniWikis">
+            <td><a style="font-weight: bold" href="#/view2" ng-click="presentWiki(miniwiki)">{{miniwiki.title}}</a>
+
+                <div style="display:none" showonhoverparent>{{miniwiki.abstract}}</div>
+            </td>
+
+        </tr>
+        </tbody>
+    </table>
+
+
+</div>
