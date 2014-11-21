@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69908405-2667-4649-a542-507a1425e5ea" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\sholmager\Desktop\CA4gittest\public\app\documentation.pdf" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/documentation.pdf" />
     </list>
     <ignored path="ExpressAngularSeed.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -212,11 +212,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sholmager\Desktop\CA4gittest\public\app" />
       <recent name="C:\Users\sholmager\Desktop\CA4gittest\server" />
       <recent name="C:\Users\ksptsinplanet\WebstormProjects\ExpressAngularSeed-master\public\files" />
       <recent name="C:\Users\ksptsinplanet\WebstormProjects\ExpressAngularSeed-master\public\app\view4" />
       <recent name="C:\Users\ksptsinplanet\WebstormProjects\ExpressAngularSeed-master\public\app\view3" />
-      <recent name="C:\Users\ksptsinplanet\WebstormProjects\ExpressAngularSeed-master\public\app\view1" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\ksptsinplanet\WebstormProjects\ExpressAngularSeed-master\public\app" />
